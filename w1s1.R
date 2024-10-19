@@ -1,13 +1,8 @@
-# Start with a vector
-a = 0
-b = 0
+# Clear Enviromment
+if(!is.null(dev.list())) dev.off()
+cat("\014")
+rm(list = ls())
+options(scipen = 9)
 
-# A longer vector
-a = 1:10
-b = c(2,5,6,8,9)
-
-# length
-length(a)
-c = length(b)
-
-class(a)
+# setting the current directory
+setwd('C:/Users/RXPCOMPUTER/Source/RProjects/dataanalyticswithr')
